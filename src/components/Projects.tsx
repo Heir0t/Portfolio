@@ -1,7 +1,7 @@
 import { projects } from "@/data/portfolioData";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react"; // 1. Adicionado ExternalLink
 
 const Projects = () => {
   return (
@@ -10,7 +10,6 @@ const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
           Projetos
         </h2>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
@@ -30,10 +29,10 @@ const Projects = () => {
                   {project.name}
                 </h3>
                 
-                <p className="text-foreground/80 text-sm leading-relaxed mb-4 flex-1">
+                <p className="text-foreground/80 text-sm leading-relaxed mb-4 flex-1 text-justify">
                   {project.description}
                 </p>
-
+                
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, idx) => (
                     <Badge
@@ -45,6 +44,20 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+
+                {project.websiteUrl && (
+                  <a 
+                    href={project.websiteUrl}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mb-3 flex justify-center group cursor-pointer"
+                  >
+                    <span className="flex items-center gap-2 text-secondary-foreground text-sm">
+                      Acessar
+                      <ExternalLink className="w-3 h-3" />
+                    </span>
+                  </a>
+                )}
 
                 <Button
                   variant="outline"

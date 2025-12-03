@@ -14,7 +14,20 @@ const Technologies = () => {
               key={index}
               className="bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col items-center gap-3 border border-border"
             >
-              <span className="text-4xl">{tech.icon}</span>
+              {/* Renderiza a imagem PNG se existir */}
+              {tech.image && (
+                <img 
+                  src={tech.image} 
+                  alt={`${tech.name} logo`}
+                  className="w-16 h-16 object-contain"
+                />
+              )}
+              
+              {/* Fallback para emoji se não houver imagem */}
+              {!tech.image && tech.icon && (
+                <span className="text-4xl">{tech.icon}</span>
+              )}
+              
               <h3 className="text-lg font-semibold text-foreground">{tech.name}</h3>
             </div>
           ))}

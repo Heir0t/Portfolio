@@ -1,13 +1,12 @@
 export interface Technology {
   name: string;
-  icon: string;
+  icon?: string;
+  image?: string; 
 }
 
-export interface Experience {
-  company: string;
-  role: string;
-  period: string;
-  description: string;
+export interface AboutMe {
+  paragraphs: string[];
+  highlights?: string[];
 }
 
 export interface Achievement {
@@ -15,6 +14,7 @@ export interface Achievement {
   title: string;
   year: string;
   description: string;
+  image?: string;
 }
 
 export interface Project {
@@ -24,6 +24,7 @@ export interface Project {
   image: string;
   technologies: string[];
   githubUrl: string;
+  websiteUrl?: string;
 }
 
 export interface ContactInfo {
@@ -31,4 +32,15 @@ export interface ContactInfo {
   linkedin: string;
   github: string;
   phone?: string;
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+  location?: string;
+  status?: string;
+  description?: string;
+  highlights?: string[];
+  certificate?: string;
 }

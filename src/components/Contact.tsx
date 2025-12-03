@@ -1,6 +1,7 @@
 import { contactInfo } from "@/data/portfolioData";
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+const phoneNumber = '5551998942175'
 
 const Contact = () => {
   return (
@@ -62,13 +63,13 @@ const Contact = () => {
               <Button
                 variant="outline"
                 className="h-auto py-4 flex items-center justify-start gap-4 border-border hover:border-primary hover:bg-secondary"
-                onClick={() => window.open(`tel:${contactInfo.phone}`)}
+                onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Olá!`, "_blank")}
               >
                 <div className="bg-primary/10 rounded-full p-3">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div className="text-left">
-                  <p className="text-xs text-muted-foreground mb-1">Telefone</p>
+                  <p className="text-xs text-muted-foreground mb-1">Whatsapp</p>
                   <p className="text-sm font-semibold text-foreground">{contactInfo.phone}</p>
                 </div>
               </Button>
