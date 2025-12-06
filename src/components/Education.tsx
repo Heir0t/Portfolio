@@ -10,7 +10,7 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="py-20 px-4 bg-muted/30">
+    <section id="education" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
           Formação Acadêmica
@@ -28,7 +28,7 @@ const Education = () => {
                   <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                     <GraduationCap className="w-8 h-8 text-primary" />
                   </div>
-                    <div className="hidden md:block w-0.5 flex-1 bg-border mt-2" />
+                  <div className="hidden md:block w-0.5 flex-1 bg-border mt-2" />
                 </div>
 
                 {/* Conteúdo */}

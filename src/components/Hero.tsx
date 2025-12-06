@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import profileImage from "@/assets/profile.jpg";
 import { profileInfo } from "@/data/portfolioData";
 
 const Hero = () => {
+  const profileImage = "https://github.com/Heir0t.png"
   const [displayedText, setDisplayedText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const fullText = `Olá, eu sou ${profileInfo.name}`;

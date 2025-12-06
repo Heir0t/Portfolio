@@ -14,16 +14,17 @@ import certificateImage from "@/assets/certificado-curso-ipv6.png";
 import colib from "@/assets/colib.jpg";
 import xfebic from "@/assets/x-febic.jpg";
 import feintec16 from "@/assets/16-feintec.png";
-import oktobersummit from "@/assets/oktober-summit.png";
+import oktobersummit from "@/assets/oktober-summit.jpg";
 import taquarasummit from "@/assets/taquara-summit.png";
 import meetupdevs from "@/assets/meetup-devs.webp";
 import ixfebic from "@/assets/ix-febic.png";
 import dashboardLogo from "@/assets/project4.png";
 import cidadaoReportaLogo from "@/assets/cidadao-reporta.png";
+import reactMoviesLogo from "@/assets/logo-reactMovies.png";
 
 export const technologies: Technology[] = [
   { name: "HTML/CSS", image: htmlcssIcon },
-  { name: "React", image: reactIcon },
+  { name: "React/React Native", image: reactIcon },
   { name: "JavaScript", image: javascriptIcon },
   { name: "TypeScript", image: typescriptIcon },
   { name: "Node.js", image: nodejsIcon },
@@ -66,6 +67,13 @@ export const education: Education[] = [
 ];
 
 export const achievements: Achievement[] = [
+  {
+    event: "Participação",
+    title: "8º Meetup dos Devs do Paranhana",
+    year: "2025",
+    description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas linguagem com live coding.",
+    image: ""
+  },
    {
     event: "Participação",
     title: "Colib - Comunicação é Liberdade",
@@ -109,9 +117,9 @@ export const achievements: Achievement[] = [
   },
    {
     event: "Participação",
-    title: "Meetup dos Devs do Paranhana",
+    title: "7º Meetup dos Devs do Paranhana",
     year: "2025",
-    description: "Encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas tecnologias.",
+    description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas tecnologias.",
     image: meetupdevs
   },
   {
@@ -173,11 +181,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Heir0t/Streamlit-Trabalho",
     websiteUrl: "https://spotify-tracks-dataset.streamlit.app/Analise_Musical"
   },
+  {
+    id: "6",
+    name: "Consumo de API com react",
+    description: "Blog sobre filmes usando a API 'The movie database' para buscar informações e exibir detalhes dos filmes.",
+    image: reactMoviesLogo,
+    technologies: ["React", "HTML", "CSS"],
+    githubUrl: "https://github.com/Heir0t/Consumo-api-react"
+  }
 ];
 
 export const contactInfo: ContactInfo = {
   email: "heitordasilvapro783@gmail.com",
-  linkedin: "https://linkedin.com/in/seu-perfil",
+  linkedin: "https://www.linkedin.com/in/heitor-augusto-do-amaral-da-silva-0951363a0/",
   github: "https://github.com/Heir0t",
   phone: "(51) 99894-2175",
 };
@@ -185,5 +201,5 @@ export const contactInfo: ContactInfo = {
 export const profileInfo = {
   name: "Heitor da Silva",
   title: "Desenvolvedor Full Stack",
-  bio: "Meu nome é Heitor Augusto do Amaral da Silva, estudante de Informática na Escola Técnica Estadual Monteiro Lobato e desenvolvedor full-stack. Durante o curso técnico trabalhei com diversas linguagens e ferramentas, sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Participo ativamente de feiras científicas e eventos de tecnologia, onde conquistei premiações e tive a oportunidade de expandir meu conhecimento técnico, melhorar minha comunicação e conhecer pessoas novas. Entre meus projetos, estão um sistema de acessibilidade para pessoas com deficiência visual e uma aplicação focada em relatos sobre problemas urbanos para a prefeitura. Meu objetivo é continuar evoluindo como profissional e contribuir com a equipe.",
+  bio: "Meu nome é Heitor Augusto do Amaral da Silva, tenho 17 anos, sou estudante do Curso Técnico em Informática na Escola Técnica Estadual Monteiro Lobato e desenvolvedor full-stack. Ao longo do curso técnico trabalhei com diferentes linguagens e ferramentas, com facilidade para aprender rápido e assumir responsabilidades em projetos. Participei ativamente de feiras científicas e eventos de tecnologia, onde conquistei premiações que fortaleceram minhas habilidades técnicas, comunicação e trabalho em equipe. Desenvolvi soluções como um sistema de acessibilidade para pessoas com deficiência visual e um sistema de notificação de problemas urbanos em tempo real, projetos que me ensinaram a colaborar com outras pessoas e a transformar desafios reais em soluções. Meu objetivo é continuar evoluindo como desenvolvedor, contribuindo de forma positiva para meu crescimento profissional.",
 };
