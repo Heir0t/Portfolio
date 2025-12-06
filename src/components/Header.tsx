@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Github } from "lucide-react";
+import { Github, Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,8 +18,19 @@ const Header = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
     }
   };
+
+  const menuItems = [
+    { id: "about", label: "Ínicio" },
+    { id: "aboutMe", label: "Sobre Mim" },
+    { id: "education", label: "Formação" },
+    { id: "technologies", label: "Tecnologias" },
+    { id: "achievements", label: "Participações" },
+    { id: "projects", label: "Projetos" },
+    { id: "contact", label: "Contato" }
+  ];
 
   return (
     <header
@@ -26,63 +38,60 @@ const Header = () => {
         isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h2 className="text-xl font-bold text-foreground">Heitor da Silva</h2>
+      <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div className="flex justify-between items-center">
+          <h2 className="text-lg sm:text-xl font-bold text-foreground">Heitor da Silva</h2>
 
-        <div className="hidden md:flex gap-6">
-          <button
-            onClick={() => scrollToSection("about")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Ínicio
-          </button>
-          <button
-            onClick={() => scrollToSection("aboutMe")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Sobre Mim
-          </button>
-          <button
-            onClick={() => scrollToSection("education")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Formação
-          </button>
-          <button
-            onClick={() => scrollToSection("technologies")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Tecnologias
-          </button>
-          <button
-            onClick={() => scrollToSection("achievements")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Participações
-          </button>
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Projetos
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Contato
-          </button>
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex gap-4 xl:gap-6">
+            {menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="text-sm text-foreground hover:text-primary transition-colors whitespace-nowrap"
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://github.com/Heir0t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              <Github size={24} className="sm:w-7 sm:h-7" />
+            </a>
+
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden text-foreground hover:text-primary transition-colors p-1"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
 
-        {/* Ícone do GitHub */}
-        <a
-          href="https://github.com/Heir0t"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-foreground hover:text-primary transition-colors"
-        >
-          <Github size={28} />
-        </a>
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-in slide-in-from-top-2">
+            <div className="flex flex-col gap-1">
+              {menuItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-left text-foreground hover:text-primary hover:bg-secondary/50 transition-colors py-3 px-2 rounded-md"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
