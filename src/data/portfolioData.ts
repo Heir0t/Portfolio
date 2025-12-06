@@ -21,6 +21,7 @@ import ixfebic from "@/assets/ix-febic.png";
 import dashboardLogo from "@/assets/project4.png";
 import cidadaoReportaLogo from "@/assets/cidadao-reporta.png";
 import reactMoviesLogo from "@/assets/logo-reactMovies.png";
+import feintec15 from "@/assets/15-feintec.png"
 
 export const technologies: Technology[] = [
   { name: "HTML/CSS", image: htmlcssIcon },
@@ -71,7 +72,7 @@ export const achievements: Achievement[] = [
     event: "Participação",
     title: "8º Meetup dos Devs do Paranhana",
     year: "2025",
-    description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas linguagem com live coding.",
+    description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas linguagens de programação e demonstrações com live coding.",
     image: ""
   },
    {
@@ -99,7 +100,7 @@ export const achievements: Achievement[] = [
     event: "Participação",
     title: "Oktober Summit",
     year: "2025",
-    description: "Evenqto de tecnologia focado em desenvolvimento de software, promovendo networking e aprendizado geral.",
+    description: "Evento de tecnologia focado em desenvolvimento de software, promovendo networking e aprendizado geral.",
     image: oktobersummit
   },
   {
@@ -127,6 +128,7 @@ export const achievements: Achievement[] = [
     title: "15ª Feintec - Feira de Inovação Tecnológica",
     year: "2024",
     description: "Feira de inovação tecnológica onde apresentei o projeto Metavision, aprimorando minhas habilidades de oratória e apresentação, que foi muito importante para meu desenvolvimento pessoal.",
+    image: feintec15
   },
   {
     event: "3º Lugar - Categoria Ciências Sociais",

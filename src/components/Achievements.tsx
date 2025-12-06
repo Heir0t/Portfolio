@@ -57,7 +57,7 @@ const Achievements = () => {
                         </div>
 
                         {/* Descrição */}
-                        <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                        <p className="text-gray-400 text-sm leading-relaxed text-justify">
                           {achievement.description}
                         </p>
 
