@@ -22,6 +22,7 @@ import dashboardLogo from "@/assets/project4.png";
 import cidadaoReportaLogo from "@/assets/cidadao-reporta.png";
 import reactMoviesLogo from "@/assets/logo-reactMovies.png";
 import feintec15 from "@/assets/15-feintec.png"
+import meetup8 from "@/assets/meetup8.jpg"
 
 export const technologies: Technology[] = [
   { name: "HTML/CSS", image: htmlcssIcon },
@@ -73,7 +74,7 @@ export const achievements: Achievement[] = [
     title: "8º Meetup dos Devs do Paranhana",
     year: "2025",
     description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas linguagens de programação e demonstrações com live coding.",
-    image: ""
+    image: meetup8
   },
    {
     event: "Participação",
