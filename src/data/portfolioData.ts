@@ -7,9 +7,13 @@ import typescriptIcon from "@/assets/typescript-icon.png";
 import nodejsIcon from "@/assets/nodejs-icon.png";
 import pythonIcon from "@/assets/python-icon.png";
 import javascriptIcon from "@/assets/javascript-icon.png";
-import htmlcssIcon from "@/assets/htmlcss-icon.png";
+import htmlIcon from "@/assets/html-icon.png";
+import cssIcon from "@/assets/css-icon.png";
 import gitIcon from "@/assets/git-icon.png";
 import sqlIcon from "@/assets/sql-icon.png";
+import kotlinIcon from "@/assets/kotlin-icon.png";
+import swiftIcon from "@/assets/swift-icon.png";
+import apexIcon from "@/assets/apex-icon.png";
 import certificateImage from "@/assets/certificado-curso-ipv6.png";
 import colib from "@/assets/colib.jpg";
 import xfebic from "@/assets/x-febic.jpg";
@@ -25,14 +29,18 @@ import feintec15 from "@/assets/15-feintec.png"
 import meetup8 from "@/assets/meetup8.jpg"
 
 export const technologies: Technology[] = [
-  { name: "HTML/CSS", image: htmlcssIcon },
+  { name: "HTML", image: htmlIcon },
+  { name: "CSS", image: cssIcon },
   { name: "React/React Native", image: reactIcon },
   { name: "JavaScript", image: javascriptIcon },
   { name: "TypeScript", image: typescriptIcon },
   { name: "Node.js", image: nodejsIcon },
+  { name: "Kotlin", image: kotlinIcon },
+  { name: "Swift", image: swiftIcon },
   { name: "Python", image: pythonIcon },
   { name: "Git", image: gitIcon },
   { name: "SQL", image: sqlIcon },
+  { name: "Oracle APEX", image: apexIcon },
 ];
 
 export const education: Education[] = [
@@ -41,7 +49,7 @@ export const education: Education[] = [
     institution: "Escola Técnica Estadual Monteiro Lobato",
     period: "2023 - 2025",
     location: "Taquara, Rio Grande do Sul",
-    status: "Em conclusão - Buscando estágio (400h)",
+    status: "Concluído",
     description: "",
     highlights: [
       "Desenvolvimento Web Full Stack",
@@ -76,7 +84,7 @@ export const achievements: Achievement[] = [
     description: "7ª edição do encontro de desenvolvedores da região do Paranhana para troca de experiências e networking onde houveram palestras sobre diversas linguagens de programação e demonstrações com live coding.",
     image: meetup8
   },
-   {
+  {
     event: "Participação",
     title: "Colib - Comunicação é Liberdade",
     year: "2025",
@@ -117,7 +125,7 @@ export const achievements: Achievement[] = [
     year: "2025",
     description: "Hackathon focado em soluções tecnológicas para problemas, promovendo trabalho em equipe e inovação, onde desenvolvi habilidades de colaboração.",
   },
-   {
+  {
     event: "Participação",
     title: "7º Meetup dos Devs do Paranhana",
     year: "2025",
@@ -154,7 +162,7 @@ export const projects: Project[] = [
     id: "1",
     name: "Cidadadão Reporta",
     description: "Aplicativo móvel para relatos de problemas urbanos, permitindo que cidadãos enviem fotos e descrições diretamente para a prefeitura local.",
-    image: cidadaoReportaLogo ,
+    image: cidadaoReportaLogo,
     technologies: ["React", "React Native", "TypeScript", "PostgreSQL", "Supabase", "Node.js",],
     githubUrl: "https://github.com/Felbit80/Cidadao-Reporta",
   },
@@ -204,5 +212,5 @@ export const contactInfo: ContactInfo = {
 export const profileInfo = {
   name: "Heitor da Silva",
   title: "Desenvolvedor Full Stack",
-  bio: "Meu nome é Heitor Augusto do Amaral da Silva, tenho 17 anos, sou estudante do Curso Técnico em Informática na Escola Técnica Estadual Monteiro Lobato e desenvolvedor full-stack. Ao longo do curso técnico trabalhei com diferentes linguagens e ferramentas, com facilidade para aprender rápido e assumir responsabilidades em projetos. Participei ativamente de feiras científicas e eventos de tecnologia, onde conquistei premiações que fortaleceram minhas habilidades técnicas, comunicação e trabalho em equipe. Desenvolvi soluções como um sistema de acessibilidade para pessoas com deficiência visual e um sistema de notificação de problemas urbanos em tempo real, projetos que me ensinaram a colaborar com outras pessoas e a transformar desafios reais em soluções. Meu objetivo é continuar evoluindo como desenvolvedor, contribuindo de forma positiva para meu crescimento profissional.",
+  bio: "Meu nome é Heitor Augusto do Amaral da Silva, tenho 17 anos, possuo formação técnica em Informática pela Escola Técnica Estadual Monteiro Lobato e sou desenvolvedor full-stack. Ao longo do curso técnico trabalhei com diferentes linguagens e ferramentas, com facilidade para aprender rápido e assumir responsabilidades em projetos. Participei ativamente de feiras científicas e eventos de tecnologia, onde conquistei premiações que fortaleceram minhas habilidades técnicas, comunicação e trabalho em equipe. Desenvolvi soluções como um sistema de acessibilidade para pessoas com deficiência visual e um sistema de notificação de problemas urbanos em tempo real, projetos que me ensinaram a colaborar com outras pessoas e a transformar desafios reais em soluções. Meu objetivo é continuar evoluindo como desenvolvedor e contribuir de forma positiva para meu crescimento profissional.",
 };
