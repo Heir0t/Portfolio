@@ -10,7 +10,7 @@ const Achievements = () => {
   };
 
   return (
-    <section id="achievements" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-secondary/30">
+    <section id="achievements" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-foreground mb-10 sm:mb-12 md:mb-16">
           Participações e Premiações

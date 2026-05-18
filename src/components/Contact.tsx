@@ -5,7 +5,7 @@ const phoneNumber = '5551998942175'
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-foreground mb-8 sm:mb-10 md:mb-12">
           Entre em Contato

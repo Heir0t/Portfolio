@@ -44,3 +44,13 @@ export interface Education {
   highlights?: string[];
   certificate?: string;
 }
+
+export interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  location?: string;
+  description?: string;
+  highlights?: string[];
+  technologies?: string[];
+}

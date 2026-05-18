@@ -1,4 +1,4 @@
-import { Technology, AboutMe, Achievement, Project, ContactInfo, Education } from "@/types/portfolio";
+import { Technology, AboutMe, Achievement, Project, ContactInfo, Education, Experience } from "@/types/portfolio";
 import MetavisionLogo from "@/assets/metavision-logo.png";
 import IrisLogo from "@/assets/iris-logo.png";
 import RedeSocialLogo from "@/assets/rede-social-logo.png";
@@ -214,3 +214,18 @@ export const profileInfo = {
   title: "Desenvolvedor Full Stack",
   bio: "Meu nome é Heitor Augusto do Amaral da Silva, tenho 17 anos, possuo formação técnica em Informática pela Escola Técnica Estadual Monteiro Lobato e sou desenvolvedor full-stack. Ao longo do curso técnico trabalhei com diferentes linguagens e ferramentas, com facilidade para aprender rápido e assumir responsabilidades em projetos. Participei ativamente de feiras científicas e eventos de tecnologia, onde conquistei premiações que fortaleceram minhas habilidades técnicas, comunicação e trabalho em equipe. Desenvolvi soluções como um sistema de acessibilidade para pessoas com deficiência visual e um sistema de notificação de problemas urbanos em tempo real, projetos que me ensinaram a colaborar com outras pessoas e a transformar desafios reais em soluções. Meu objetivo é continuar evoluindo como desenvolvedor e contribuir de forma positiva para meu crescimento profissional.",
 };
+
+export const experience: Experience[] = [
+  {
+    company: "SnapControl",
+    role: "Desenvolvedor Mobile",
+    period: "2026",
+    location: "Taquara, RS",
+    highlights: [
+      "Desenvolvimento de novas funcionalidades utilizando Kotlin e Swift.",
+      "Manutenção de webservices em node.js",
+      "Manutenção de aplicações web em oracle apex",
+    ],
+    technologies: ["Kotlin", "Swift", "Node.js", "OracleSQL", "Oracle APEX"],
+  },
+];
